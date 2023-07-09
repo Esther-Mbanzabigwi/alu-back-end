@@ -14,7 +14,7 @@ if __name__ == "__main__":
     todos = json.loads(res.text)
     done = []
     for i in todos:
-        if i['completed']:
+        if i['ok']:
             done.append(i)
     print("Employee {} is done with tasks({}/{}):".format(
                                                           user['name'],
