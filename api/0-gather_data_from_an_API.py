@@ -21,4 +21,4 @@ if __name__ == "__main__":
                                                           len(done),
                                                           len(todos)))
     for i in done:
-        print("\t {}".format(i["title"]))
+        print("\t {}".format(i["title"])
