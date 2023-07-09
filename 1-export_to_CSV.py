@@ -20,4 +20,3 @@ if __name__ == "__main__":
     with open("{}.csv".format(user["id"]), 'w', encoding='utf-8') as f:
         writer = csv.writer(f, quoting=csv.QUOTE_NONNUMERIC)
         writer.writerows(csv_data)
-
