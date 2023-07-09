@@ -1,4 +1,7 @@
  list"""
+#!/usr/bin/python3
+"""get TODO list"""
+
 
 import csv
 import json
@@ -17,6 +20,5 @@ if __name__ == "__main__":
         todos = getTodos(i["id"])
         data[i["id"]] = [{"task": j["title"], "completed": j["completed"],
                           "username": i["username"]} for j in todos]
-    with open("todo_all_employees.json", 'w', encoding='utf-8') as f:
-        f.write(json.dumps(data))
+    with open("todo_all_employees.json", 
 
